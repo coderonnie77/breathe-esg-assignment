@@ -22,7 +22,7 @@ function App() {
   const fetchRecords = async () => {
 
     const response = await axios.get(
-      'http://127.0.0.1:8000/api/review/'
+      'https://breathe-esg-assignment-05jx.onrender.com/api/review/'
     );
 
     setRecords(response.data);
@@ -49,7 +49,7 @@ function App() {
     formData.append('file', file);
 
     await axios.post(
-      'http://127.0.0.1:8000/api/upload/sap/',
+      'https://breathe-esg-assignment-05jx.onrender.com/api/upload/sap/',
       formData
     );
 
@@ -62,7 +62,7 @@ function App() {
   const approveRecord = async (id) => {
 
     await axios.post(
-      `http://127.0.0.1:8000/api/review/${id}/approve/`
+      `https://breathe-esg-assignment-05jx.onrender.com/api/review/${id}/approve/`
     );
 
     fetchRecords();
@@ -72,7 +72,7 @@ function App() {
   const lockRecord = async (id) => {
 
     await axios.post(
-      `http://127.0.0.1:8000/api/review/${id}/lock/`
+      `https://breathe-esg-assignment-05jx.onrender.com/api/review/${id}/lock/`
     );
 
     fetchRecords();
