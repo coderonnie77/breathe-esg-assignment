@@ -1,0 +1,4 @@
+Plant Code,Fuel Type,Quantity,Unit
+PLT100,Diesel,4000,liter
+PLT200,Gasoline,500,gallon
+PLT300,Diesel,-100,liter
